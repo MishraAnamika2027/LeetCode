@@ -10,7 +10,7 @@ public:
     }
     int count(int m){
         int sum =0;
-        while(m!=0){
+        while(m>0){
             sum += m%10;
             m /= 10;
         }
