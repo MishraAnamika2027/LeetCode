@@ -3,7 +3,7 @@ public:
     int countLessEqual(vector<int>&row, int x){
        int low = 0, high = row.size();
        while(low < high){
-        int mid = low + (high - low) / 2;
+        int mid = (low+high) / 2;
         if(row[mid] > x) high = mid;
         else low = mid + 1;
        }
